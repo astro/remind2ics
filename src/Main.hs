@@ -58,7 +58,7 @@ remind = do
                       (h, m) <- time
                       return $ (h, m)
       let startDay =
-            fromGregorian (fromMaybe 2000 mYear) (month + 1) (day + 1)
+            fromGregorian (fromMaybe 2000 mYear) (month + 1) day
           stampTime =
               secondsToDiffTime $
               case mStartTime of
